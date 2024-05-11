@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+   margin:0;
+   padding:0;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   position:relative;
+}
+nav{
+   width:100%;
+   height:100px;
+   background-color:rgba(51, 51, 51, 0.3);
+   position:absolute;
+   top:0;
+   z-index:5;
+}
+#ohc{
+   text-align: center;
+   margin-left: 110px;
+   padding: 5px;
+   font-size: 40px;
+   color: #000;
+   font-family: DM Serif Display, serif;
+}
+.ol{
+   width: 33.33%;
+   height: 580px;
+   float: left;
+}
+.left{
+   margin-left: 500px;
+}
+.innerleft{
+   margin-left: 100px;
+   margin-top: -250px;
+}
+.right{
+   margin-left: -600px;
+   margin-top: 50px;
+}
+#about_us
+{
+   text-align: center;
+   margin-left: -430px;
+   font-size: 40px;
+   color: #000;
+   font-family: DM Serif Display, serif;
+   
+
+}
+#rahul{
+   height: 250px;
+   width: 250px;
+   margin-left: 200px;
+   border-radius:  35% 10%;
+}
+.header{
+   width:100%;
+   height:500px;
+   opacity:.8;
+   /* background-color:rgb(30, 173, 255); */
+   
+   background-size:cover;
+   background-position:bottom;
+}
+.container{
+   width:100%;
+}
+.container h1{
+   font-size:50px
+}
+span{
+   color: rgb(0, 42, 255);
+   font-size: 35px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about{
+   padding:5% 0;
+   width:100%;
+   height:auto;
+   background-color:#fff;
+}
+#abimg{
+   /* background-size: cover; */
+   /* height: 100%;
+   width: 100%; */
+   height: 500px;
+   width: 1200px;
+   margin-left: 150px;
+   margin-top: 20px;
+   border: #000;
+   border-block-style:  solid;
+}
+
+.about .left{
+   padding:2% 0;
+   float:left;
+   width:50%;
+   display:inline-block;
+}
+.about .right{
+   width:50%;
+   display:inline-block;
+}
+.about .right img{
+   width:100%
+}
+.about .left h1{
+   text-align:center;
+   color:#1EADFF;
+   margin:0 0 10px 0;
+}
+.about .left hr{
+   width:20%;
+   border-top:2px solid #000;
+   border-bottom:none;
+}
+.about .left p{
+   font-size:1rem;
+   margin:40px auto;
+   width:80%
+}
+
+.mission{
+   padding:5% 0;
+   width:100%;
+   height:auto;
+   background-color:#fff;
+}
+.mission .right{
+   padding:2% 0;
+   width:50%;
+
+   display:inline-block;
+}
+.mission .left{
+   float:left;
+   width:50%;
+
+   display:inline-block;
+}
+.mission .left img{
+   width:100%;
+}
+.mission .right h1{
+   text-align:center;
+   color:#1EADFF;
+   margin:0 0 20px 0;
+}
+.mission .right hr{
+   width:35%;
+   border-top:2px solid #000;
+   border-bottom:none;
+}
+.mission .right p{
+   font-size:1rem;
+   margin:40px auto;
+   width:80%
+}
+
+.oi{
+   width: 33%;
+   height: 320px;
+}
+
+.clear{
+    clear: both;			
+}
+
+
+/*footer*/
+
+
+main-footer {
+  /* padding: 70px 0; */
+  display: flex;
+ 
+  justify-content: space-evenly;
+  background-color: #114743;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+#flogo{
+  margin-top:12px;
+  margin-bottom: -62px;
+  height: 150px;
+  width: 150px;
+  
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+ background: #000;
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: #6EB981;
+  
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  /* margin-top: 30px; */
+  padding-top: 10px;
+  margin-right: 80px;
+  margin-left: 410px;
+  /* background: #471f1f; */
+  width: 380px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+.com{
+  margin-left: 170px;
+  /* background: #6b40ec; */
+  width: 380px;
+  margin-top: -110px;
+  align-content:start;
+}
+
+.sociallogos{
+  padding:20px 0;
+  margin-right: 20px;
+  
+}
+
+.sociallogos .logobox a{
+  padding:0 10px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:22px;
+}
+
+.com ul li{
+  padding:5px 0;
+}
+.info{
+  
+  margin-left: 800px;
+  margin-top: -145px;
+  margin-bottom: 80px;
+  width: 290px;
+}
+
+.address{
+  margin-left: 1150px;
+ width: 290px;
+ margin-top: -190px;
+ /* margin-bottom: -50px; */
+}
+#but{
+  height: 30px;
+  width: 100px;
+  syntax: none;
+  background-color:white;
+  border-radius: 50px;
+  
+}
+
+
+
+
+
+/* media */
+@media(max-width:1200px){
+   .mission .right p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+   .about .left p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+}
+
+
+
+
+
+
+@media(max-width:992px){
+   .about .left{
+   width:100%; 
+}
+   .about .right{
+   width:100%; 
+}
+      .mission .left{
+   width:100%; 
+}
+   .mission .right{
+   width:100%; 
+}
+   .team .card{ 
+   width:40%;
+}   
+}
+
+@media(max-width:768px){
+      .team .card{ 
+   width:100%;
+} 
+   nav{
+      height:80px;
+   }
+}
+

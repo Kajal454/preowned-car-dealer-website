@@ -1,0 +1,331 @@
+.card {
+	overflow: visible;
+	width: 190px;
+	height: 254px;
+	margin-bottom: 10px;
+  }
+  
+  .content {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 300ms;
+	box-shadow: 0px 0px 10px 1px #000000ee;
+	border-radius: 5px;
+  }
+  
+  .front, .back {
+	background-color: #c21c1c;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	border-radius: 5px;
+	overflow: hidden;
+  }
+  #ti{
+	float: left;
+	margin-left: 500px;
+	margin-top:-200px;
+	margin-right: 90px;
+	
+  }
+  
+  .back {
+	width: 100%;
+	height: 100%;
+	
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+  }
+  
+  .back::before {
+	position: absolute;
+	content: ' ';
+	display: block;
+	width: 160px;
+	height: 160%;
+	margin-left: 20px;
+	background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+	animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content {
+	position: absolute;
+	
+	width: 99%;
+	height: 99%;
+	background-color: #151515;
+	/* background-image: url("../images/car transfer.png"); */
+	/* background-position:center;
+	background-size:200px 250px; */
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+  }
+  
+  .card:hover .content {
+	transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+	0% {
+	  transform: rotateZ(0deg);
+	}
+  
+	0% {
+	  transform: rotateZ(360deg);
+	}
+  }
+  
+  .front {
+	transform: rotateY(180deg);
+	color: white;
+  }
+  
+  .front .front-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  .front-content .badge {
+	background-color: #00000055;
+	padding: 2px 10px;
+	border-radius: 10px;
+	backdrop-filter: blur(2px);
+	width: fit-content;
+  }
+  
+  .description {
+	box-shadow: 0px 0px 10px 5px #00000088;
+	width: 100%;
+	padding: 10px;
+	background-color: #00000099;
+	backdrop-filter: blur(5px);
+	border-radius: 5px;
+  }
+  
+  .title {
+	font-size: 11px;
+	max-width: 250px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .title p {
+	width: 50%;
+  }
+  
+  .card-footer {
+	color: #ffffff88;
+	margin-top: 5px;
+	font-size: 8px;
+  }
+  
+  .front .img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+  }
+  
+  .circle {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: #ffbb66;
+	position: relative;
+	filter: blur(15px);
+	animation: floating 2600ms infinite linear;
+  }
+  
+  #bottom {
+	background-color: #ff8866;
+	left: 50px;
+	top: 0px;
+	width: 150px;
+	height: 150px;
+	animation-delay: -800ms;
+  }
+  
+  #right {
+	background-color: #ff2233;
+	left: 160px;
+	top: -80px;
+	width: 30px;
+	height: 30px;
+	animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+	0% {
+	  transform: translateY(0px);
+	}
+  
+	50% {
+	  transform: translateY(10px);
+	}
+  
+	100% {
+	  transform: translateY(0px);
+	}
+  }
+
+
+  .faq-item-hide {
+    display: none;
+}
+
+
+
+.faq-heading {
+  font-family: Montserrat;
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 19px;
+  text-indent: 10px;
+  color: #041D5C;
+  transition: text-indent 0.2s;
+}
+
+.faq-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111;
+  padding-left: 20px;
+  padding-right: 100px;
+  margin-bottom: 20px;
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.6s ease-in-out; /* Transição de opacidade */
+}
+
+.faq {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  position: relative;
+  
+  
+ /* border: 1px, solid #E1E1E1*/;
+}
+
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 50px; /* Ajustar conforme necessário */
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background-color: #EDF0EF;
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s ease; /* Suaviza a transição da borda */
+  box-sizing: border-box; /* Garante que a borda seja incluída no cálculo da dimensão */
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 10px;
+  height: 10px;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid #041D5C;
+  border-right: 2px solid #041D5C;
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked + label {
+  /*background: #;*/
+  color: #041D5C;
+  height: auto; /* Altura ajustada para conteúdo */
+  transition: height 0.8s, border 0.3s ease; /* Adiciona transição para borda */
+  padding-top: 0; /* Ajusta o padding */
+}
+
+.faq input[type='checkbox']:not(:checked) + label {
+  height: 70px;/* Altura quando não checado */
+}
+
+
+.faq label:hover, .faq input[type="checkbox"]:checked + label {
+  border-left: 3px solid #041D5C; /* Bordas somente no lado esquerdo */
+  padding-left: 17px; /* Ajuste no padding para compensar a borda */
+}
+
+.faq input[type="checkbox"]:checked + label .faq-text {
+  opacity: 1; /* Torna o texto visível ao expandir */
+}
+
+/* Remove a barra de rolagem 
+  display: none;
+}
+
+::-webkit-scrollbar {*/
+
+@media (max-width: 768px) {
+  .faq-heading {
+    font-size: 12px;
+    padding-right: 40px;
+    padding-left:10px;
+    text-indent: 0px;
+  }
+
+  .faq-text {
+    font-size: 12px;
+    padding-right: 50px;
+  }
+  
+  .faq input[type='checkbox']:not(:checked) + label {
+  height: 60px;/* Altura quando não checado */
+}
+}
+#showMore, #showLess {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: transparent;
+    color: #041D5C;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    padding-right: 40px; /* Ajuste para não sobrepor o texto ao ícone */
+}
+
+/* Opcional: Adiciona um efeito ao passar o mouse para indicar interatividade */
+#showMore:hover, #showLess:hover {
+    color: #4FBB9D;
+    transition: background-color 0.3s;
+}
+

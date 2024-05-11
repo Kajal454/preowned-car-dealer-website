@@ -1,0 +1,58 @@
+/* Style for the flex container */
+.flex-container {
+    display: flex;
+	background: #adaaaa42;
+    flex-wrap: wrap;
+	padding: 20px;
+    justify-content: center; /* Align items in the center */
+}
+.card-img{
+	height: 250px;
+	width: 250px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.center{
+	align-items: center;
+	font-size: 40px;
+	margin-left: 25px;
+}
+.bu{
+    height: 30px;
+    width: 80px;
+    background: #ac1010;
+    color: #f8f5f5;
+    border-radius: 10px;
+}
+
+/* Style for each flex item */
+.flex-card {
+    background-color: #f8f5f5;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+	gap: 5px;
+    transition: background-color 0.5s ease;
+	height:  580px;
+    padding: 15px;
+    width: 300px; /* Adjust as needed */
+}
+
+.flex-card:hover {
+    background-color: #b4d8d64b; /* Change to desired hover color */
+  }
+
+/* Style for the paragraphs inside each flex item */
+.flex-card p {
+    margin: 5px 0;
+    margin-left: 45px;
+    font-family: Arial, sans-
+}
+
+/* Style for the strong tags inside each paragraph */
+.flex-card strong {
+    /* font-weight: bold; */
+    font-size: 18px;
+    color: rgb(6, 52, 87);
+}

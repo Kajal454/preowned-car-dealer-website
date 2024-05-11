@@ -1,0 +1,66 @@
+/* CSS for the review form */
+.review-form {
+   background: #efeded77;
+    text-align: center;
+    margin: auto;
+    padding: 10px 10px;
+    width: 500px;
+  }
+  
+  .review-form h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .review-form form {
+    margin-top: 20px;
+  }
+  
+  .review-form .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .review-form label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+  
+  .review-form input[type="text"],
+  .review-form input[type="number"],
+  .review-form input[type="date"],
+  .review-form select {
+    width: calc(100% - 130px); /* Adjust the width according to your preference */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .review-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 11px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .review-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .review-form select {
+    width: calc(100% - 130px); /* Adjust the width according to your preference */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .review-form input[type="file"] {
+    margin-top: 5px;
+  }
+  

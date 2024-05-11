@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width:350px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-color: black;
+    background: #dae0e076;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-container {
+    overflow: hidden;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .glasses {
+    width: 100%;
+    border-color: black;
+    height: auto;
+  }
+  
+  .info {
+    padding: 20px;
+    
+  }
+  .heading1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+  }
+  span{
+    color: rgb(40, 21, 152);
+  }
+
+  .image-container {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Adjust as needed */
+  }
+  
+  .glasses {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  
