@@ -22,9 +22,8 @@
 
 
 
+![home](https://github.com/komal65/preowned-car-dealer-website/assets/114643264/3913386b-94b3-49bf-b750-5964adcd14a3)
+![reviews](https://github.com/komal65/preowned-car-dealer-website/assets/114643264/31241cf4-66a5-4e7d-ad11-fdfd2c4d3869)
 
 
-
-![image](https://github.com/komal65/preowned-car-dealer-website/public/images/uploads/home.png)
-![image](https://github.com/komal65/preowned-car-dealer-website/public/images/uploads/reviews.png)
 
